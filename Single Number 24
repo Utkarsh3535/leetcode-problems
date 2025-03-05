@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+
+    int N, i, result = 0;
+
+    
+    scanf("%d", &N);
+
+    int nums[N];
+
+    
+    for (i = 0; i < N; i++) {
+        scanf("%d", &nums[i]);
+    }
+
+   
+    for (i = 0; i < N; i++) {
+        result ^= nums[i];  
+    }
+
+     printf("%d\n", result);
+
+    return 0;
+}
